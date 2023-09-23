@@ -8,9 +8,7 @@ button {
 }
 
 body {
+    background-color: darkmagenta;
     font-size: 30pt;
     font-style: italic;
-    outline-style: outset;
-    outline-width: 5px;
-    outline-color: currentColor
 }
