@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>Momark Test</title>
   
   <!-- HTML -->
   
@@ -18,43 +18,70 @@
     
     
   </p>
-  <p style="color: white;text-shadow: -1px -1px 0  black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black">
+  <h2 style="color: white;text-shadow: -1px -1px 0  black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black">
     
     
-    MASANGKAY BAKLA?! </p>
+    MASANGKAY BAKLA?! </h2>
   <!-- Project -->
   <script src="Server.js"></script>
 <body>
   <h2 style="color: white; text-shadow: -1px -1px 0  black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black">Si masangkay mahal ang taong nag-ngangalang lezada.</h2>
   
-  <img src="Images//MasangkayLoveLezada"
-  style="height: 350px; width: 300px; position: absolute; top: 400px"/>
+  <img id="MasangkayPic" src="Images//MasangkayLoveLezada"
+  style="height: 340px; width: 290px; position: absolute; top: 250px; display: none" />
+  
+  <img id="MasangkayRizz" src="Images//MasangkayRizz"
+  style="height: 300px; width: 230px; position: absolute; top: 450px; Right: 40px; display: none" alt="Rotated Image"/>
   
   <a href="page2.html">
-    <button name="Button_Test" type="button" onclick="alert('Pindutin mo yung Ok Bai')" style="background-color: red; color: indianred; font-size: 25px; border-radius: 25px; position: absolute; top: 85px; right: 30px; text-shadow: -1px -1px 0  black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black"> 
+    <button id="PictureShower" name="Button_Test" type="button" onclick="alert('Pindutin mo yung Ok Bai')" style="background-color: red; color: indianred; font-size: 25px; border-radius: 25px; position: absolute; top: 180px; left: 10px; text-shadow: -1px -1px 0  black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black"> 
   
-    Pakipindot ako
+    Nix page
   
     </button>
   </a>
   
   
-  <button id="777" onclick="DoSomething()" name="Button_Test" type="button" onclick="alert('TANGINA NAPINDOT GAGO HAHAHA')" style="background-color:green; color: greenyellow; font-size: 20px; border-radius: 25px; position: absolute; top: 90px;left: 10px; text-shadow: -1px -1px 0  black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black"> 
+  <button id="777" onclick="DoSomething()" name="Button_Test" type="button" style="background-color:green; color: greenyellow; font-size: 20px; border-radius: 25px; position: absolute; top: 120px;left: 10px; text-shadow: -1px -1px 0  black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; display: block"> 
   
-  Huwag Ako Pindutin
+  Pindutin para makita ang pinaka pogi sa lahat
   
   </button>
   
+  <button id="222" onclick="DoSomething2()" name="Button_Test" type="button" style="background-color:green; color: greenyellow; font-size: 20px; border-radius: 25px; position: absolute; top: 120px;left: 10px; text-shadow: -1px -1px 0  black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; display: none"> 
+  
+  Masyadong pogi tangina itago ang litrato
+  
+  </button>
   
   <script>
+  
     function DoSomething(){
-      document.getElementById("777").innerHTML = "Putanginang yan ang kulit";
+      document.getElementById('MasangkayPic').style.display = 'block';
+      document.getElementById('MasangkayRizz').style.display = 'block';
       
+      document.getElementById("222").style.display = 'block';
+      document.getElementById("777").style.display = 'none';
     }
     
+    function DoSomething2(){
+     document.getElementById('MasangkayPic').style.display = 'none';
+     document.getElementById('MasangkayRizz').style.display = 'none';
+      
+     document.getElementById("222").style.display = 'none';
+     document.getElementById("777").style.display = 'block';
+    }
   </script>
   
+<style>
+  #MasangkayRizz {
+    transform: rotate(4deg);
+  }
   
+  
+</style>
+
+
 </body>
 
 </html>
